@@ -1,6 +1,7 @@
 # Dan Yee - # 001443637
 # CINF 108 - Programming for Problem Solving
 # Mini-Assignment #3 - While Loops
+
 continueProgram = True                                                                              # flag variable for while loop condition
 
 while continueProgram:                                                                              # while the flag variable is true, execute body
