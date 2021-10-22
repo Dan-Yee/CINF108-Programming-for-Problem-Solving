@@ -1,4 +1,4 @@
-# Dan Yee
+# Dan Yee - # 001443637
 # CINF 108 - Programming for Problem Solving
 # Assignment #3 - Compound Interest Calculator with Loops
 
@@ -28,13 +28,13 @@ while runAgain:
     if(interestRate > 11):
         accumulatedValue += 75                                                                                                          # adds 75 to final accumulated value if original rate > 11
 
-    yearlyValue = bonus                                                                                                                 # yearly value that changes for each calculation
+    yearlyValue = 0                                                                                                                 # yearly value that changes for each calculation
     print("\nYear \t Amount")
     for numYears in range(int(compoundYears)):                                                                                          # loop for as many times as years inputted
         # calculate the accumulated value after a specific year
         yearlyValue += principalAmount * ((1 + ((interestRate / 100) + incentiveRate) / compoundFrequency) ** (compoundFrequency * (numYears + 1)))
         print((numYears + 1), " \t $", format(yearlyValue, ",.2f"), sep = "")
-        yearlyValue = bonus                                                                                                             # reset yearly value to bonus to reset value for next year
+        yearlyValue = 0                                                                                                             # reset yearly value to bonus to reset value for next year
 
     print("\nAt the end of ", compoundYears, " years, you will have $", format(accumulatedValue, ",.2f"), sep = "")                     # display the accumulated value after compound interest rounded to 2 decimal places
 
