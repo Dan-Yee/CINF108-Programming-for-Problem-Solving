@@ -1,4 +1,4 @@
-# Dan Yee - # 001443637
+# Dan Yee
 # CINF 108 - Programming for Problem Solving
 # Assignment #3 - Compound Interest Calculator with Loops
 
