@@ -38,8 +38,12 @@ def main():
         # display the result of Greater_Than function as part of the String
         print("The multiplied result, ", format(multipliedResult, ",.2f"), ", is ", Greater_Than(sum), " 1500.", sep = "")
 
-        runAgain = input("\nWould you like to run the program again? (y/n): ")                          # store the user to enter "y" or "n" to see if the program should run again
-        if(runAgain.lower() == "n"):                                                                    # if user inputted "n" or "N", invalidate the loop condition by setting flag variable to False
+        runAgain = input("\nWould you like to run the program again? (y/n): ")                          # ask the user if they want to run the program again
+        while not((runAgain.lower() == "y") or (runAgain == "n")):                                      # perform input validation
+            print("Invalid Input: Valid inputs are \"Y\", \"y\", \"N\", or \"n\"")
+            runAgain = input("Would you like to run the program again? (y/n): ")
+        
+        if runAgain.lower() == "n":                                                                     # terminate program if user inputted any case of "n"
             continueProgram = False
         print("")
 main()
