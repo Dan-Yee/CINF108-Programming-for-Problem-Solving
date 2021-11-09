@@ -45,7 +45,7 @@ def main():
 
         print("\nYear \t Amount")
         for numYears in range(1, (int(compoundYears) + 1)):                                                                                 # print simplified amortization table
-            print(numYears, " \t $", format(calculate_Amount(principalAmount, adjustedInterestRate, compoundFrequency, numYears), ",.2f"), sep = "")                                                                                                          # reset yearly value to bonus to reset value for next year
+            print(numYears, " \t $", format(calculate_Amount(principalAmount, adjustedInterestRate, compoundFrequency, numYears), ",.2f"), sep = "")
 
         accumulatedValue = calculate_Amount(principalAmount, adjustedInterestRate, compoundFrequency, compoundYears)                        # calculates and stores the accumulated balance after compound interest and any extra incentive rates
         accumulatedValue += incentive_one(principalAmount, interestRate, compoundYears)                                                     # adds 1% incentive bonus if applicable or 0
